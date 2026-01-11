@@ -1,3 +1,5 @@
+
+
 const apiKey = "0a2e788fd2a244aba1e44617261101"; // your WeatherAPI key
 
 const cityInput = document.getElementById("cityInput");
@@ -12,7 +14,6 @@ getWeatherBtn.addEventListener("click", () => {
     }
 
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
-    
 
     fetch(url)
         .then(response => response.json())
